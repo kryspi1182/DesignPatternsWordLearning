@@ -1,0 +1,43 @@
+﻿<local:ParentPage x:Class="ztp_projekt.Study"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ztp_projekt"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Study"
+      Loaded="Window_Loaded"
+                  x:Name="testPage">
+
+    <Page.CommandBindings>
+        <CommandBinding Command="Undo" Executed="Undo" />
+    </Page.CommandBindings>
+    <Page.InputBindings>
+        <KeyBinding Key="Z" Modifiers="Ctrl" Command="Undo" />
+    </Page.InputBindings>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" x:Name="QuestionGrid" Margin="5" />
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Margin="5" Padding="5" Grid.Column="0">Postęp w obecnym poziomie trudności: </Label>
+            <TextBlock Name="Score" Margin="5" Padding="5" Grid.Column="1"/>
+        </Grid>
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+            <Button Click="Submit" Content="Dalej" Margin="5" Padding="5"></Button>
+            <Button Click="Undo" Content="Cofnij" Margin="5" Padding="5"></Button>
+            <Button Click="Menu" Content="Powrót do menu" Margin="5" Padding="5"></Button>
+            
+        </StackPanel>
+        
+    </Grid>
+</local:ParentPage>

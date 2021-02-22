@@ -1,0 +1,60 @@
+﻿<Window x:Class="ztp_projekt.ChangeQuestion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ztp_projekt"
+        mc:Ignorable="d"
+        Title="" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Content="Treść pytania - polski" Grid.Row="0" Grid.Column="0" />
+        <TextBox Name="newContentPolish" Grid.Row="0" Grid.Column="1"/>
+
+        <Label Content="Treść pytania - angielski" Grid.Row="1" Grid.Column="0" />
+        <TextBox Name="newContentEnglish" Grid.Row="1" Grid.Column="1"/>
+
+        <Label Content="Odpowiedź - polski" Grid.Row="2" Grid.Column="0" />
+        <TextBox Name="newAnswerPolish" Grid.Row="2" Grid.Column="1"/>
+
+        <Label Content="Odpowiedź - angielski" Grid.Row="3" Grid.Column="0" />
+        <TextBox Name="newAnswerEnglish" Grid.Row="3" Grid.Column="1"/>
+
+        <Label Content="Błędna odpowiedź 1 - polski" Grid.Row="4" Grid.Column="0" />
+        <TextBox Name="newWrongAnswerPolish1" Grid.Row="4" Grid.Column="1" />
+
+        <Label Content="Błędna odpowiedź 2 - polski" Grid.Row="5" Grid.Column="0" />
+        <TextBox Name="newWrongAnswerPolish2" Grid.Row="5" Grid.Column="1" />
+
+        <Label Content="Błędna odpowiedź 3 - polski" Grid.Row="6" Grid.Column="0" />
+        <TextBox Name="newWrongAnswerPolish3" Grid.Row="6" Grid.Column="1" />
+
+        <Label Content="Błędna odpowiedź 1 - angielski" Grid.Row="7" Grid.Column="0" />
+        <TextBox Name="newWrongAnswerEnglish1" Grid.Row="7" Grid.Column="1" />
+
+        <Label Content="Błędna odpowiedź 2 - angielski" Grid.Row="8" Grid.Column="0" />
+        <TextBox Name="newWrongAnswerEnglish2" Grid.Row="8" Grid.Column="1" />
+
+        <Label Content="Błędna odpowiedź 3 - angielski" Grid.Row="9" Grid.Column="0" />
+        <TextBox Name="newWrongAnswerEnglish3" Grid.Row="9" Grid.Column="1" />
+
+        <Button Name="Action" Grid.Row="10" Grid.Column="0" Click="Submit" />
+        <Button Content="Anuluj" Grid.Row="10" Grid.Column="1" Click="Cancel" />
+    </Grid>
+</Window>
